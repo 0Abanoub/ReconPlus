@@ -103,7 +103,7 @@ scan_domain(){
         crt_scan
         check_takeover_candidates
         ;;
-        *)       
+        default)       
         nmap_scan
         dirsearch_scan
         crt_scan
