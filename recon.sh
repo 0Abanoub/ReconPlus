@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 REQUIRED_TOOLS=(jq dig curl nmap dirsearch)
 
