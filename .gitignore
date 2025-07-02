@@ -1,0 +1,8 @@
+# Ignore all recon results
+*_recon/
+*.log
+*.crt
+*.txt
+*.nmap
+*.subdomains.txt
+*.report
