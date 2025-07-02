@@ -1,7 +1,6 @@
 # 🕵️‍♂️ Bug Bounty Recon Script
 
-A **Bash-based automation tool** to streamline the reconnaissance phase for bug bounty hunting and ethical hacking.  
-It automates multiple tasks like port scanning, content discovery, certificate lookup, and even detects **subdomain takeover** candidates.
+**ReconPlus** is a Bash-based reconnaissance automation tool designed for bug bounty hunters and penetration testers. It supports scanning domains using Nmap, Dirsearch, crt.sh, and checks for subdomain takeover possibilities.
 
 ---
 
@@ -66,4 +65,12 @@ Always have permission before scanning any target.
 
 ```bash
 chmod +x recon.sh
-./recon.sh -m all target.com
+
+# Full scan (nmap + dirsearch + crt.sh + takeover)
+./recon.sh -m all example.com
+
+# Just subdomain takeover detection
+./recon.sh -m takeover-only example.com
+
+# Interactive mode
+./recon.sh -i
